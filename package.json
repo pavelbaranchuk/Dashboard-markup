@@ -1,0 +1,37 @@
+{
+  "name": "task-5",
+  "version": "1.0.0",
+  "description": "Webpack setup &amp; website markup",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --entry ./src/js/index.js --output-filename ./dist/bundle.js  --mode production",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavelbaranchuk/Task-5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavelbaranchuk/Task-5/issues"
+  },
+  "homepage": "https://github.com/pavelbaranchuk/Task-5#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^4.0.0-beta.1",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "postcss-import": "^12.0.0",
+    "postcss-preset-env": "^6.0.10"
+  }
+}
