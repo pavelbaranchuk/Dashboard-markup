@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 
@@ -14,13 +14,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/, // files ending with .scss
-        use: ["css-hot-loader"].concat(
-          ExtractTextPlugin.extract({
-            fallback: "style-loader",
-            use: ["css-loader", "postcss-loader", "sass-loader"]
-          })
-        )
+        test: /\.scss$/,
+        use: [
+          "css-hot-loader",
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader"
+        ]
       },
       {
         test: /\.(png|svg|jpg)/,
@@ -33,7 +34,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin({ filename: "style.css" }),
+    new MiniCssExtractPlugin({ filename: "style.css" }),
 
     new HtmlWebpackPlugin({
       inject: false,
