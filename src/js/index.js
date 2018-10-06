@@ -1,4 +1,4 @@
-import "../scss/main.scss";
+import "../scss/index.scss";
 
 var cats = require("./cats.js");
 console.log(cats);

@@ -5,6 +5,7 @@ const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
+  mode: "production",
   entry: "./src/js/index.js",
   output: {
     path: path.join(__dirname, "dist"),
@@ -13,11 +14,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: ["css-loader", "postcss-loader", "sass-loader"]
-        })
+        test: /\.scss$/, // files ending with .scss
+        use: ["css-hot-loader"].concat(
+          ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: ["css-loader", "postcss-loader", "sass-loader"]
+          })
+        )
+      },
+      {
+        test: /\.(png|svg|jpg)/,
+        use: ["file-loader"]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ["file-loader"]
       }
     ]
   },

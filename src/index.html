@@ -5,10 +5,130 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>Webpack App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
 </head>
 
-<body class="page">
-  <p class="page__paragraph">Hello World</p>
+<body>
+
+  <div class="main">
+    <aside class="sidebar">
+      <h2 class="sidebar__title">CreativeCRM</h2>
+      <div class="sidebar__menu">
+        <div class="sidebar__section">
+          <img class="sidebar__icon" src="../assets/img/sidebar-1.png" alt="dashboard_icon">
+          <p class="sidebar__item">Dashboard</p>
+        </div>
+
+        <div class="sidebar__section">
+          <img class="sidebar__icon" src="../assets/img/sidebar-2.png" alt="reports_icon">
+          <p class="sidebar__item">Reports</p>
+        </div>
+
+        <div class="sidebar__section">
+          <img class="sidebar__icon" src="../assets/img/sidebar-3.png" alt="customers_icon">
+          <p class="sidebar__item">Customers</p>
+        </div>
+
+        <div class="sidebar__section">
+          <img class="sidebar__icon" src="../assets/img/sidebar-4.png" alt="calendar_icon">
+          <p class="sidebar__item">Calendar</p>
+        </div>
+
+        <div class="sidebar__section">
+          <img class="sidebar__icon" src="../assets/img/sidebar-5.png" alt="tasks_icon">
+          <p class="sidebar__item">Tasks</p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="header">
+      <div class="header__breadcrumbs">
+        <p>
+          <a href="/">Customers</a>
+          <span>></span>
+          <a href="/">Max Jones</a>
+        </p>
+      </div>
+
+      <div class="header__right">
+        <input class="header__search" type="text" placeholder="SEARCH">
+        <img class="header__email" src="" alt="">
+        <img class="header__bell" src="" alt="">
+        <img class="header__woman" src="" alt="">
+        <!-- <a class="header__name" href="/">Hello Lauren</a> -->
+        <div class="header__wrapper">
+          <span>Hello Lauren ></span>
+          <ul class="header__dropdown">
+            <li>
+              <a href="/">
+                <i class="icon-envelope icon-large"></i>
+                "Classic mail"
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <i class="icon-envelope icon-large"></i>
+                "Classic mail"
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <i class="icon-envelope icon-large"></i>
+                "Classic mail"
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="profile">
+      <img src="" alt="">
+      <div class="profile__top">
+        <div class="profile__spec">
+
+        </div>
+        <div class="profile__social">
+
+        </div>
+      </div>
+      <div class="profile__bottom">
+        <div class="profile__phone">
+          <p class="profile__section">PHONE</p>
+          <p class="profile__info">(+31) 140 175 468</p>
+        </div>
+        <div class="profile__email">
+          <p class="profile__section">EMAIL</p>
+          <p class="profile__info">maxjones@gmail.com</p>
+        </div>
+        <div class="profile__address">
+          <p class="profile__section">ADDRESS</p>
+          <a href="/">
+            <p class="profile__info">Binnenweg 50, Rotterdam</p>
+          </a>
+          <i class="fas fa-pencil-alt"></i>
+        </div>
+        <button>CREATE QUOTE</button>
+      </div>
+
+    </div>
+
+    <!-- <div class="menu">
+
+    </div>
+
+    <div class="overview">
+
+    </div>
+
+    <div class="activity">
+
+    </div> -->
+  </div>
+
+
+
   <script type="text/javascript" src="bundle.js"></script>
 </body>
 

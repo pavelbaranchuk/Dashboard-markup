@@ -1,0 +1,21 @@
+.sidebar {
+  grid-area: sidebar;
+  background: $sidebar-color;
+  min-width: 200px;
+
+  &__title {
+    color: $main-color;
+    font-family: $logo-font;
+    margin: 30px 20px 40px 20px;
+  }
+
+  &__item {
+    font-family: $sidebar-font;
+    color: white;
+    display: inline-block;
+  }
+
+  &__icon {
+    margin: 0 20px 0 20px;
+  }
+}
