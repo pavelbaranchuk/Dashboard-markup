@@ -1,12 +1,13 @@
 .sidebar {
   grid-area: sidebar;
-  background: yellow;
+  background: $sidebar-color;
   min-width: 200px;
 
   &__title {
     color: $main-color;
     font-family: $logo-font;
     margin: 30px 20px 40px 20px;
+    letter-spacing: 1px;
   }
 
   &__item {
@@ -16,6 +17,25 @@
   }
 
   &__icon {
-    margin: 0 20px 0 20px;
+    margin: 0 20px 0 0;
+  }
+
+  &__section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+    margin: 0 20px 0 30px;
+  }
+
+  &__wrapper {
+    margin: 0;
+    padding: 0;
+    &:hover {
+      background-color: $highlighted-color;
+      border-left: 5px solid $main-color;
+    }
+  }
+
+  &__active {
+    background-color: $highlighted-color;
+    border-left: 5px solid $main-color;
   }
 }

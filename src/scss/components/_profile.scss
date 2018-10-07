@@ -1,3 +1,21 @@
 .profile {
   grid-area: profile;
+  display: grid;
+  grid-template-columns: 100px auto;
+
+  &__customer {
+    border-radius: 50%;
+  }
+
+  &__image {
+    align-self: center;
+  }
+
+  &__right {
+    margin-left: 30px;
+  }
+
+  &__top {
+    border-bottom: 1px solid gray;
+  }
 }

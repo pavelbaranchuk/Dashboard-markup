@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <title>Webpack App</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -14,29 +15,39 @@
     <aside class="sidebar">
       <h2 class="sidebar__title">CreativeCRM</h2>
       <div class="sidebar__menu">
-        <div class="sidebar__section">
-          <img class="sidebar__icon" src="../assets/img/sidebar-1.png" alt="dashboard_icon">
-          <p class="sidebar__item">Dashboard</p>
+        <div class="sidebar__wrapper">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-1.png" alt="dashboard_icon">
+            <p class="sidebar__item">Dashboard</p>
+          </div>
         </div>
 
-        <div class="sidebar__section">
-          <img class="sidebar__icon" src="../assets/img/sidebar-2.png" alt="reports_icon">
-          <p class="sidebar__item">Reports</p>
+        <div class="sidebar__wrapper">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-2.png" alt="reports_icon">
+            <p class="sidebar__item">Reports</p>
+          </div>
         </div>
 
-        <div class="sidebar__section">
-          <img class="sidebar__icon" src="../assets/img/sidebar-3.png" alt="customers_icon">
-          <p class="sidebar__item">Customers</p>
+        <div class="sidebar__wrapper sidebar__active">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-3.png" alt="customers_icon">
+            <p class="sidebar__item">Customers</p>
+          </div>
         </div>
 
-        <div class="sidebar__section">
-          <img class="sidebar__icon" src="../assets/img/sidebar-4.png" alt="calendar_icon">
-          <p class="sidebar__item">Calendar</p>
+        <div class="sidebar__wrapper">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-4.png" alt="calendar_icon">
+            <p class="sidebar__item">Calendar</p>
+          </div>
         </div>
 
-        <div class="sidebar__section">
-          <img class="sidebar__icon" src="../assets/img/sidebar-5.png" alt="tasks_icon">
-          <p class="sidebar__item">Tasks</p>
+        <div class="sidebar__wrapper">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-5.png" alt="tasks_icon">
+            <p class="sidebar__item">Tasks</p>
+          </div>
         </div>
       </div>
     </aside>
@@ -44,92 +55,108 @@
     <div class="header">
       <div class="header__breadcrumbs">
         <p>
-          <a href="/">Customers</a>
-          <span>></span>
-          <a href="/">Max Jones</a>
+          <a class="header__link header__inactive" href="/">Customers</a>
+          <span class="header__sign">></span>
+          <a class="header__link" href="/">Max Jones</a>
         </p>
       </div>
 
       <div class="header__right">
-        <input class="header__search" type="text" placeholder="SEARCH">
-        <img class="header__email" src="" alt="">
-        <img class="header__bell" src="" alt="">
-        <img class="header__woman" src="" alt="">
-        <!-- <a class="header__name" href="/">Hello Lauren</a> -->
+        <div class="header__search"><span class="fa fa-search header__fasearch"></span><input
+            class="header__input" type="text" placeholder="SEARCH"></div>
+        <img class="header__notification" src="../assets/img/mail_sign.png" alt="email_image">
+        <img class="header__notification" src="../assets/img/bell_sign.png" alt="bell_image">
+        <img class="header__woman" src="../assets/img/woman_avatar.png" alt="profile_image">
         <div class="header__wrapper">
-          <span>Hello Lauren ></span>
-          <ul class="header__dropdown">
-            <li>
-              <a href="/">
-                <i class="icon-envelope icon-large"></i>
-                "Classic mail"
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i class="icon-envelope icon-large"></i>
-                "Classic mail"
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i class="icon-envelope icon-large"></i>
-                "Classic mail"
-              </a>
-            </li>
-          </ul>
+          <div id="dd" class="header__dropdown">
+            <p class="header__title">Hello Lauren<i class="arrow header__arrow"></i></p>
+            <ul class="header__dd">
+              <li class="header__item"><a class="header__drop" href="#"><i
+                    class="fa fa-envelope header__icon"></i>Email
+                  us
+                </a></li>
+              <li class="header__item"><a class="header__drop" href="#"><i
+                    class="fa fa-phone header__icon"></i>Call us</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
     </div>
 
     <div class="profile">
-      <img src="" alt="">
-      <div class="profile__top">
-        <div class="profile__spec">
-
-        </div>
-        <div class="profile__social">
-
-        </div>
+      <div class="profile__image">
+        <img class="profile__customer" src="../assets/img/man_avatar.png" alt="customer_image">
       </div>
-      <div class="profile__bottom">
-        <div class="profile__phone">
-          <p class="profile__section">PHONE</p>
-          <p class="profile__info">(+31) 140 175 468</p>
+      <div class="profile__right">
+        <div class="profile__top">
+          <div class="profile__spec">
+            <p>MAX JONES</p>
+            <span>GOLD</span>
+            <p>Sales & Marketing</p>
+          </div>
+          <div class="profile__social">
+            <p class="profile__title">INVITE TO SOCIAL</p>
+            <div class="profile__images">
+              <img src="../assets/img/linkedin.png" alt="social">
+              <img src="../assets/img/facebook.png" alt="social">
+              <img src="../assets/img/twitter.png" alt="social">
+            </div>
+          </div>
         </div>
-        <div class="profile__email">
-          <p class="profile__section">EMAIL</p>
-          <p class="profile__info">maxjones@gmail.com</p>
+        <div class="profile__bottom">
+          <div class="profile__phone">
+            <p class="profile__section">PHONE</p>
+            <p class="profile__info">(+31) 140 175 468</p>
+          </div>
+          <div class="profile__email">
+            <p class="profile__section">EMAIL</p>
+            <p class="profile__info">maxjones@gmail.com</p>
+          </div>
+          <div class="profile__address">
+            <p class="profile__section">ADDRESS</p>
+            <div>
+              <i class="fa fa-pencil"></i>
+              <input type="text" value="Binnenweg 50, Rotterdam">
+            </div>
+
+          </div>
+          <button>CREATE QUOTE</button>
         </div>
-        <div class="profile__address">
-          <p class="profile__section">ADDRESS</p>
-          <a href="/">
-            <p class="profile__info">Binnenweg 50, Rotterdam</p>
-          </a>
-          <i class="fas fa-pencil-alt"></i>
-        </div>
-        <button>CREATE QUOTE</button>
       </div>
 
     </div>
 
-    <!-- <div class="menu">
-
+    <div class="menu">
+      <h3 class="menu__title">OVERVIEW</h3>
+      <h3 class="menu__title">ORDERS</h3>
+      <h3 class="menu__title">PAYMENTS</h3>
+      <h3 class="menu__title">INTERACTIONS</h3>
+      <h3 class="menu__title">CUSTOMER FEEDBACK</h3>
     </div>
 
     <div class="overview">
-
+      <div>
+        <p>CUSTOMER HAPPINESS</p>
+        <img src="../assets/img/smile.png" alt="happy_face">
+        <p>The Product is Awesome</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div class="w3-container w3-blue w3-round-xlarge" style="width:25%">25%</div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="activity">
+  <div class="activity">
 
-    </div> -->
+  </div>
   </div>
 
 
 
   <script type="text/javascript" src="bundle.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/cats.js"></script>
 </body>
 
 </html>

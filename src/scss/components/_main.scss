@@ -3,10 +3,10 @@
   height: 100%;
   display: grid;
   // margin: 0 auto;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 1fr 4fr;
   grid-template-areas:
     "sidebar header"
     "sidebar profile"
     "sidebar menu";
-  grid-column-gap: 20px;
+  grid-column-gap: 35px;
 }
