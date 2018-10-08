@@ -15,6 +15,10 @@
 
   &__highlighted {
     color: $highlighted-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__image {

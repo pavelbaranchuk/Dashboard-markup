@@ -50,5 +50,8 @@
       "js-beautify -r",
       "git add"
     ]
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

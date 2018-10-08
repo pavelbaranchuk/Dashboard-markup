@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
 
 <head>
   <link rel="stylesheet" href="style.css">
@@ -72,12 +72,9 @@
           <div id="dd" class="header__dropdown">
             <p class="header__title">Hello Lauren<i class="arrow header__arrow"></i></p>
             <ul class="header__dd">
-              <li class="header__item"><a class="header__drop" href="#"><i
-                    class="fa fa-envelope header__icon"></i>Email
-                  us
+              <li class="header__item"><a class="header__drop" href="#">
                 </a></li>
-              <li class="header__item"><a class="header__drop" href="#"><i
-                    class="fa fa-phone header__icon"></i>Call us</a></li>
+              <li class="header__item"><a class="header__drop" href="#"></a></li>
             </ul>
           </div>
         </div>
@@ -201,96 +198,41 @@
         <p class="activity__title">Activity</p>
         <div class="activity__item">
           <img class="activity__image" src="../assets/img/woman_avatar.png" alt="woman_avatar">
-          <p class="activity__text">Added new task <span class="activity__highlighted">‘Remind
-              customer to complete payment’</span>
+          <p class="activity__text">Added new task <a class="activity__highlighted"
+              href="/">‘Remind customer to complete
+              payment’
+            </a>
             assigned to Lauren</p>
           <p class="activity__date">Todat at 4:24 PM</p>
         </div>
 
         <div class="activity__item">
           <img class="activity__image" src="../assets/img/woman_avatar.png" alt="woman_avatar">
-          <p class="activity__text">Added new upsell suggestion <span class="activity__highlighted">Upsell
-              in Customer Support
-              Interactions
-            </span></p>
+          <p class="activity__text">Added new upsell suggestion <a class="activity__highlighted"
+              href="/">Upsell in Customer
+              Support Interactions</a></p>
           <p class="activity__date">July 21th</p>
         </div>
 
         <div class="activity__item">
           <img class="activity__image" src="../assets/img/woman_avatar.png" alt="woman_avatar">
-          <p class="activity__text">Edited <span class="overview__highlighted">‘Order
-              #54789B’</span></p>
+          <p class="activity__text">Edited <a class="activity__highlighted"
+              href="/">‘Order #54789B’</a> </p>
           <p class="activity__date">July 21th</p>
         </div>
 
         <div class="activity__item">
           <img class="activity__image" src="../assets/img/woman_avatar.png" alt="woman_avatar">
-          <p class="activity__text">Changed <span class="activity__highlighted">Invoice
-              Address</span> for <span class="activity__highlighted">Order
-              #47893N
-            </span></p>
+          <p class="activity__text">Changed <a class="activity__highlighted"
+              href="/">Invoice Address</a> for <a class="activity__highlighted"
+              href="/">Order #47893N</a></p>
           <p class="activity__date">June 23rd</p>
         </div>
       </div>
     </div>
   </div>
 
-  </div>
-
-
-
-
-
-  <script type="text/javascript" src="bundle.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript">
-    function DropDown(el) {
-      this.dd = el;
-      this.placeholder = this.dd.children('span');
-      this.opts = this.dd.find('ul.dropdown > li');
-      this.val = '';
-      this.index = -1;
-      this.initEvents();
-    }
-    DropDown.prototype = {
-      initEvents: function () {
-        var obj = this;
-
-        obj.dd.on('click', function (event) {
-          $(this)
-            .toggleClass('header__active');
-          return false;
-        });
-
-        obj.opts.on('click', function () {
-          var opt = $(this);
-          obj.val = opt.text();
-          obj.index = opt.index();
-          obj.placeholder.text(obj.val);
-        });
-      },
-      getValue: function () {
-        return this.val;
-      },
-      getIndex: function () {
-        return this.index;
-      }
-    }
-
-    $(function () {
-
-      var dd = new DropDown($('#dd'));
-
-      $(document)
-        .click(function () {
-          // all dropdowns
-          $('.header__dropdown')
-            .removeClass('header__active');
-        });
-
-    });
-
-  </script>
+  <script src="bundle.js"></script>
 </body>
 
 </html>

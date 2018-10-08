@@ -96,45 +96,7 @@
     font-family: $heading-font;
   }
 
-  &__icon {
-    width: 2rem;
-  }
-
-  &__dd {
-    position: absolute;
-    padding: 0;
-    top: 140%;
-    left: 0;
-    right: 0;
-    background: white;
-    border-radius: inherit;
-    border: 0.1rem solid rgba(0, 0, 0, 0.17);
-    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);
-    font-weight: normal;
-    transition: all 0.5s ease-in;
-    list-style: none;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  &__drop {
-    display: block;
-    padding: 0.8rem;
-    text-decoration: none;
-    color: black;
-    border-bottom: 0.1rem solid #e6e8ea;
-    box-shadow: inset 0 0.1rem 0 rgba(255, 255, 255, 1);
-    transition: all 0.3s ease-out;
-  }
-
   &__item {
-    &:hover {
-      background: #f3f8f8;
-    }
-  }
-
-  &__active .header__dd {
-    opacity: 1;
-    pointer-events: auto;
+    display: inline-block;
   }
 }

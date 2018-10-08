@@ -1,6 +1,6 @@
 # 🖥 Task-5
 
-Webpack setup and website markup
+Webpack setup and "CreativeCRM" Dashboard markup
 
 ### 🚀 Getting Started
 
@@ -17,3 +17,9 @@ npm start
 ```
 
 then go to http://localhost:3000
+
+## To build the project
+
+```
+npx webpack
+```

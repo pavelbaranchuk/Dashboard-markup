@@ -41,6 +41,10 @@
     width: 180px;
     font-size: 0.9rem;
     align-self: flex-end;
+    border: none;
+    &:hover {
+      background: darken(black, 20%);
+    }
   }
 
   &__bottom {
@@ -65,6 +69,7 @@
     font-size: 0.8rem;
     position: absolute;
     top: 110%;
+    right: -60%;
     background: $main-color;
     color: white;
     margin: -2rem 0 2rem 9.8rem;
