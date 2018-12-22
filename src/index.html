@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Webpack App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <aside class="sidebar">
+      <p class="sidebar__title">CreativeCRM
+      </p>
+      <div class="sidebar__menu">
+        <div class="sidebar__wrapper">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-1.png" alt="dashboard_icon">
+            <p class="sidebar__item">Dashboard</p>
+          </div>
+        </div>
+
+        <div class="sidebar__wrapper">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-2.png" alt="reports_icon">
+            <p class="sidebar__item">Reports</p>
+          </div>
+        </div>
+
+        <div class="sidebar__wrapper sidebar__active">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-3.png" alt="customers_icon">
+            <p class="sidebar__item">Customers</p>
+          </div>
+        </div>
+
+        <div class="sidebar__wrapper">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-4.png" alt="calendar_icon">
+            <p class="sidebar__item">Calendar</p>
+          </div>
+        </div>
+
+        <div class="sidebar__wrapper">
+          <div class="sidebar__section">
+            <img class="sidebar__icon" src="../assets/img/sidebar-5.png" alt="tasks_icon">
+            <p class="sidebar__item">Tasks</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="header container">
+      <div class="header__breadcrumbs">
+        <p class="header__bc">
+          <a class="header__link header__inactive" href="/">Customers</a>
+          <span class="header__sign">></span>
+          <span class="header__place">Max Jones</span>
+        </p>
+      </div>
+
+      <div class="header__right">
+        <div class="header__search"><span class="fa fa-search header__fasearch"></span><input
+            class="header__input" type="text" placeholder="SEARCH"></div>
+        <img class="header__notification" src="../assets/img/mail_sign.png" alt="email_image">
+        <img class="header__notification" src="../assets/img/bell_sign.png" alt="bell_image">
+        <img class="header__woman" src="../assets/img/woman_avatar.png" alt="profile_image">
+        <div class="header__wrapper">
+          <div id="dd" class="header__dropdown">
+            <p class="header__title">Hello Lauren<i class="arrow header__arrow"></i></p>
+            <ul class="header__dd">
+              <li class="header__item"><a class="header__drop" href="#">
+                </a></li>
+              <li class="header__item"><a class="header__drop" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="profile container">
+      <div class="profile__image">
+        <img class="profile__customer" src="../assets/img/man_avatar.png" alt="customer_image">
+      </div>
+      <div class="profile__right">
+        <div class="profile__top">
+          <div>
+            <p class="profile__name">MAX JONES <span class="profile__gold">GOLD</span></p>
+            <p class="profile__specialization">Sales & Marketing</p>
+          </div>
+          <div>
+            <p class="profile__title">INVITE TO SOCIAL</p>
+            <div class="profile__images">
+              <a class="profile__link" href="/"><img class="profile__social"
+                  src="../assets/img/linkedin.png" alt="social"></a>
+              <a class="profile__link" href="/"><img class="profile__social"
+                  src="../assets/img/facebook.png" alt="social"></a>
+              <a class="profile__link" href="/"><img class="profile__social"
+                  src="../assets/img/twitter.png" alt="social"></a>
+            </div>
+          </div>
+        </div>
+        <div class="profile__wrapper">
+          <div class="profile__bottom">
+            <div class="profile__phone">
+              <p class="profile__section">PHONE</p>
+              <p class="profile__info">(+31) 140 175 468</p>
+            </div>
+            <div class="profile__email">
+              <p class="profile__section">EMAIL</p>
+              <p class="profile__info">maxjones@gmail.com</p>
+            </div>
+            <div class="profile__address">
+              <p class="profile__section">ADDRESS</p>
+              <div>
+                <a class="profile__editable" href="/">Binnenweg 50, Rotterdam
+                  <i class="profile__pencil fa fa-pencil"></i></a>
+              </div>
+            </div>
+          </div>
+          <button class="profile__button">CREATE QUOTE</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="menu container">
+      <h3 class="menu__title menu__active">OVERVIEW</h3>
+      <h3 class="menu__title">ORDERS</h3>
+      <h3 class="menu__title">PAYMENTS</h3>
+      <h3 class="menu__title">INTERACTIONS</h3>
+      <h3 class="menu__title">CUSTOMER FEEDBACK</h3>
+    </div>
+
+    <div class="overview">
+      <div class="container overview__wrapper">
+        <div class="overview_happiness overview__tile">
+          <p class="overview__title">CUSTOMER HAPPINESS</p>
+          <img class="overview__smile" src="../assets/img/smile.png" alt="happy_face">
+          <p class="overview_text">The Product is Awesome</p>
+          <div class="w3-light-grey w3-round-xlarge overview__base">
+            <div class="overview__progress w3-container w3-round-xlarge overview__front"
+              style="width:90%"></div>
+          </div>
+          <p class="overview__persent">90%</p>
+        </div>
+        <div class="overview__turnover overview__tile">
+          <p class="overview__title">TOTAL TURNOVER</p>
+          <p class="overview__number">€3,297</p>
+        </div>
+        <div class="overview__orders">
+          <div class="overview__total overview__tile">
+            <div class="overview_iconcube">
+              <img class="overview__image" src="../assets/img/orders_total.png"
+                alt="image_total">
+            </div>
+            <div class="overview__data">
+              <p class="overview__yellow">ORDERS TOTAL</p>
+              <p class="overview__halfnumber">43</p>
+            </div>
+          </div>
+          <div class="overview__inprogress overview__tile">
+            <div class="overview_iconorders">
+              <img class="overview__image" src="../assets/img/orders_in_progress.png"
+                alt="image_total">
+            </div>
+            <div class="overview__data">
+              <p class="overview__blue">ORDERS IN PROGRESS</p>
+              <p class="overview__halfnumber">2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overview__bottom container">
+        <div class="overview__tickets">
+          <p class="overview__thirdtitle">OPEN TICKETS</p>
+          <p class="overview__thirdnumber">1</p>
+        </div>
+
+        <div class="overview__suggestions">
+          <p class="overview__thirdtitle">UPSELL SUGGESTIONS</p>
+          <p class="overview__thirdnumber">2</p>
+        </div>
+
+        <div class="overview__payments">
+          <p class="overview__thirdtitle">OPEN PAYMENTS</p>
+          <p class="overview__thirdnumber">0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="activity">
+      <div class="container">
+        <p class="activity__title">Activity</p>
+        <div class="activity__item">
+          <img class="activity__image" src="../assets/img/woman_avatar.png" alt="woman_avatar">
+          <p class="activity__text">Added new task <a class="activity__highlighted"
+              href="/">‘Remind customer to complete
+              payment’
+            </a>
+            assigned to Lauren</p>
+          <p class="activity__date">Todat at 4:24 PM</p>
+        </div>
+
+        <div class="activity__item">
+          <img class="activity__image" src="../assets/img/woman_avatar.png" alt="woman_avatar">
+          <p class="activity__text">Added new upsell suggestion <a class="activity__highlighted"
+              href="/">Upsell in Customer
+              Support Interactions</a></p>
+          <p class="activity__date">July 21th</p>
+        </div>
+
+        <div class="activity__item">
+          <img class="activity__image" src="../assets/img/woman_avatar.png" alt="woman_avatar">
+          <p class="activity__text">Edited <a class="activity__highlighted"
+              href="/">‘Order #54789B’</a> </p>
+          <p class="activity__date">July 21th</p>
+        </div>
+
+        <div class="activity__item">
+          <img class="activity__image" src="../assets/img/woman_avatar.png" alt="woman_avatar">
+          <p class="activity__text">Changed <a class="activity__highlighted"
+              href="/">Invoice Address</a> for <a class="activity__highlighted"
+              href="/">Order #47893N</a></p>
+          <p class="activity__date">June 23rd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+.header {
+  grid-area: header;
+  min-width: 63rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid rgba(128, 128, 128, 0.322);
+
+  &__link {
+    text-decoration: none;
+    font-family: $heading-font;
+  }
+
+  &__arrow {
+    color: #4f4f4f;
+    font-size: 1.5rem;
+    line-height: 1.235rem;
+    margin-left: 2.5rem;
+  }
+
+  &__bc {
+    margin-top: 1.2rem;
+  }
+
+  &__place {
+    color: $highlighted-color;
+    font-family: $heading-font;
+  }
+
+  &__sign {
+    padding: 0 1rem 0 1rem;
+    font-weight: bold;
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 2fr;
+    grid-auto-rows: 4rem;
+  }
+
+  &__search {
+    align-self: center;
+    position: relative;
+    color: #aaa;
+  }
+
+  &__fasearch {
+    position: absolute;
+    top: 0.5rem;
+    left: 10rem;
+    font-size: 0.8rem;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 12rem;
+    height: 2rem;
+    text-indent: 1rem;
+    border: 0.1rem solid #cccccc60;
+    border-radius: 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  &__notification {
+    align-self: center;
+    padding: 0 0.8rem 0 0.8rem;
+  }
+
+  &__woman {
+    align-self: center;
+    border-radius: 50%;
+  }
+
+  &__inactive {
+    color: black;
+  }
+
+  &__arrow {
+    border: solid black;
+    border-width: 0 0.2rem 0.2rem 0;
+    display: inline-block;
+    padding: 0.2rem;
+    transform: rotate(45deg);
+    margin: 0 0 0.1rem 1rem;
+  }
+
+  &__dropdown {
+    position: relative;
+    padding-left: 1rem;
+    outline: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    border: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  &__title {
+    font-family: $heading-font;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+}
